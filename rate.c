@@ -1,0 +1,37 @@
+#include<stdio.h>
+#include<conio.h>
+int i,rate,ratex,ratey,ratez,total;
+void main()
+{
+if(i>50)
+{
+	rate=i*0.5;
+	if(i>100)
+	{
+		ratex=rate+i*0.75;
+		if(i>200)
+		{
+			ratey=ratex+i*1.20;
+			if(i>250)
+			{
+				ratez=ratey+i*1.5;
+				total=ratez+ratez*10/100;
+			}
+		}
+		else
+		{
+			total=ratey;
+		}
+	}
+	else
+	{
+		total=ratex;
+	}
+}
+else
+{
+	total=rate;
+}
+printf("%d",total);
+getch();
+}
